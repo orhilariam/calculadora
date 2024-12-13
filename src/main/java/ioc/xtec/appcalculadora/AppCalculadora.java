@@ -33,8 +33,14 @@ public class AppCalculadora {
             resultat = c.multiplicar(num1, num2);
             break;
          case "/":
-            resultat = c.dividir(num1, num2);
+            try {
+                resultat = c.dividir(num1, num2);
+            } catch (IllegalArgumentException e) {
+                System.out.println("Error: " + e.getMessage());
+                return;
+            }
             break;
+    
          default:
             System.out.println("Operació no vàlida");
             return;

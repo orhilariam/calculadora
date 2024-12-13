@@ -15,9 +15,10 @@ public class Calculadora {
    }
 
    public double dividir(double a, double b) {
-      /*if (b == 0) {
+      if (b == 0) {
          throw new IllegalArgumentException("El divisor no pot ser zero");
-      }*/
+      }
+      
       return a/b;
    }
 }
