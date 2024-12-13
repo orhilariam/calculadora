@@ -23,6 +23,9 @@ public class AppCalculadora {
 
       double resultat = 0;
       switch (operacio) {
+          case "+":
+            resultat = c.sumar((int) num1, (int) num2);
+            break;
          case "*":
             resultat = c.multiplicar(num1, num2);
             break;
